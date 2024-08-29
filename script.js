@@ -49,3 +49,8 @@ function addNumber0() {
     number = number + 0;
     alert(number)
 }
+
+function deleteR(){
+    number = number - number
+    alert(number)
+}
