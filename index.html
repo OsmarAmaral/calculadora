@@ -1,29 +1,36 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Calculadora</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Calculadora</title>
 </head>
 <body>
-    <div class="caixa">
-        <div class="tela"></div>
-        <div class="buttons">
-            <button type="#" onclick="addNumber1()">1</button>
-            <button type="#" onclick="addNumber2()">2</button>
-            <button type="#" onclick="addNumber3()">3</button>
-            <button type="#" onclick="addNumber4()">4</button>
-            <button type="#" onclick="addNumber5()">5</button>
-            <button type="#" onclick="addNumber6()">6</button>
-            <button type="#" onclick="addNumber7()">7</button>
-            <button type="#" onclick="addNumber8()">8</button>
-            <button type="#" onclick="addNumber9()">9</button>
-            <button type="#" onclick="addNumber0()">0</button>
-            <button type="#" onclick="deleteR()">X</button>
-        </div>
+  <div id="caixa">
+    <input type="text" id="tela" disabled>
+    <div class="operacoes">
+      <button class="butaoOp" onclick="inputDisplay('+')">+</button>
+      <button class="butaoOp" onclick="inputDisplay('-')">-</button>
+      <button class="butaoOp" onclick="inputDisplay('*')">*</button>
+      <button class="butaoOp" onclick="inputDisplay('/')">/</button>
+      <button class="butaoOp" onclick="inputDisplay('.')">.</button>
+      <button class="butaoOp" onclick="inputDisplay('C')">C</button>
+      <button class="butaoOp" onclick="inputDisplay('=')">=</button>
     </div>
+    <div id="butoes">
+        <button onclick="inputDisplay('1')" class="butao">1</button>
+        <button onclick="inputDisplay('2')" class="butao">2</button>
+        <button onclick="inputDisplay('3')" class="butao">3</button>
+        <button onclick="inputDisplay('4')" class="butao">4</button>
+        <button onclick="inputDisplay('5')" class="butao">5</button>
+        <button onclick="inputDisplay('6')" class="butao">6</button>
+        <button onclick="inputDisplay('7')" class="butao">7</button>
+        <button onclick="inputDisplay('8')" class="butao">8</button>
+        <button onclick="inputDisplay('9')" class="butao">9</button>
+    </div>
+  </div>
 </body>
 </html>
