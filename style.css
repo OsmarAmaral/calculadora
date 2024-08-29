@@ -1,31 +1,75 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
 }
 
-.caixa {
-    height: 500px;
-    width: 500px;
-    border: 1px solid black;
+#caixa {
+  width: 500px;
+  height: 500px;
+  border: 2px solid #4a6274;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #081d58;
 }
 
-.tela {
-    border: 1px solid black;
-    height: 80px;
-    margin: 15px;
-    background-color: lightgray;
+#tela {
+  height: 100px;
+  width: 90%;
+  box-sizing: border-box;
+  margin: 25px;
+  font-size: 60px;
+  font-family: 'courier new';
+  background-color: #4a6274;
+  font-weight: bold;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  color: #ffcc33;
 }
 
-.buttons {
-    display: flex;
-    
-    margin: 15px;
-    justify-content: space-between;
+#butoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-button {
-    margin: 10px;
-    height: 30px;
-    width: 30px;
+.butao {
+  height: 50px;
+  width: 25%;
+  margin: 15px;
+  font-family: 'courier new';
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid #4a6274;
+  border-radius: 5px;
+  background-color: #ffcc33;
+  color: #000000;
+  cursor: pointer;
+  
+}
+
+.butao:active {
+  transform: scale(0.95);
+}
+
+button:hover {
+  outline: 2px solid #45a049;
+  border: 1px solid #45a049;
+}
+
+.butaoOp {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  font-family: 'courier new';
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid #4a6274;
+  border-radius: 5px;
+  background-color: #ffcc33;
+  color: #000000;
+  cursor: pointer;
 }
